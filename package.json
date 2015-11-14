@@ -6,5 +6,10 @@
 	"license": "MIT",
 	"repository": "git://github.com/derhuerst/dyndns.git",
 	"dependencies": {
+		"coffee-script":	"^1.10.0",
+		"prompt-sync": 		"^3.0.0",
+		"keychain": 		"^1.0.0",
+		"config": 			"^1.16.0",
+		"inwx": 			"derhuerst/inwx-nodejs"
 	}
 }
