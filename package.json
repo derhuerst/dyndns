@@ -8,6 +8,10 @@
 	"main": "lib/server.js",
 	"scripts": {
 		"build":		"coffee -cb -o lib src",
+		"set-password":	"./set-password.sh",
+		"server":		"./server.sh",
+		"activate":		"./activate.sh",
+		"deactivate":	"./deactivate.sh"
 	},
 	"dependencies": {
 		"coffee-script":	"^1.10.0",
