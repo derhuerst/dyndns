@@ -1,0 +1,10 @@
+{
+	"name": "dyndns",
+	"version": "0.1.0",
+	"description": "Dynamic DNS for widschi.",
+	"author": "Jannis R <mail@jannisr.de>",
+	"license": "MIT",
+	"repository": "git://github.com/derhuerst/dyndns.git",
+	"dependencies": {
+	}
+}
