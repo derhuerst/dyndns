@@ -15,10 +15,8 @@
 	<key>Program</key>
 	<string>/Users/jannis/.dyndns/server.sh</string>
 
-	<key>OnDemand</key><false/>
 	<key>RunAtLoad</key><true/>
 	<key>KeepAlive</key><true/>
-	<key>Crashed</key><true/>
 
 	<key>StandardErrorPath</key>
 	<string>/Users/jannis/.dyndns/stderr.log</string>
