@@ -3,7 +3,7 @@
 	"version":           "0.1.0",
 	"description":       "Dynamic DNS for widschi.",
 	"author":            "Jannis R <mail@jannisr.de>",
-	"license":           "MIT",
+	"license":           "ISC",
 	"repository":        "git://github.com/derhuerst/dyndns.git",
 	"main":              "lib/server.js",
 	"scripts": {
