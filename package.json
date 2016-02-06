@@ -4,7 +4,10 @@
 	"description":       "Dynamic DNS for widschi.",
 	"author":            "Jannis R <mail@jannisr.de>",
 	"license":           "ISC",
+	"homepage":          "https://github.com/derhuerst/dyndns",
 	"repository":        "git://github.com/derhuerst/dyndns.git",
+	"bugs":              "https://github.com/derhuerst/dyndns/issues",
+	"private":           true,
 	"main":              "lib/server.js",
 	"scripts": {
 		"build":         "coffee -cb -o lib src",
