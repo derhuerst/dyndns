@@ -8,14 +8,15 @@ To get started:
 git clone https://github.com/derhuerst/dyndns.git ~/.dyndns
 cd ~/.dyndns
 npm install
-npm run activate
+npm run set-password # store the password in the keychain
+npm start # start the server
 ```
 
 To remove everything:
 
 ```shell
 cd ~/.dyndns
-npm run deactivate
+npm stop # stop the server
 cd ..
 rm -rf ~/.dyndns
 ```
