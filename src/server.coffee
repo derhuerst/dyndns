@@ -1,10 +1,10 @@
-http =			require 'http'
-url =			require 'url'
-querystring =	require 'querystring'
-config =		require 'config'
-keychain =		require 'keychain'
+http =          require 'http'
+url =           require 'url'
+querystring =   require 'querystring'
+config =        require 'config'
+keychain =      require 'keychain'
 
-updateARecord =	require './update-a-record'
+updateARecord = require './update-a-record'
 
 
 

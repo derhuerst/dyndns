@@ -1,6 +1,6 @@
-prompt =		require 'prompt-sync'
-keychain =		require 'keychain'
-config =		require 'config'
+prompt =   require 'prompt-sync'
+keychain = require 'keychain'
+config =   require 'config'
 
 
 

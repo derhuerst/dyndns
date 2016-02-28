@@ -1,4 +1,4 @@
-inwx =			require 'inwx'
+inwx = require 'inwx'
 
 
 

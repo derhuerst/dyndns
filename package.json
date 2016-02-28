@@ -10,7 +10,7 @@
 	"private":           true,
 	"main":              "lib/server.js",
 	"scripts": {
-		"build":         "coffee -cb -o lib src",
+		"build":         "coffee -cb -o lib src && coffee -cb config",
 		"set-password":  "node ./lib/set-password.js",
 		"server":        "node ./lib/server.js",
 		"start":         "forever start ./lib/server.js",
