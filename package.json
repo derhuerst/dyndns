@@ -10,18 +10,20 @@
 	"private":           true,
 	"main":              "lib/server.js",
 	"scripts": {
-		"build":         "coffee -cb -o lib src && coffee -cb config",
-		"set-password":  "node ./lib/set-password.js",
-		"server":        "node ./lib/server.js",
-		"start":         "forever start ./lib/server.js",
-		"stop":          "forever stop ./lib/server.js"
+		"build":             "coffee -cb -o lib src && coffee -cb config",
+		"set-password":      "node ./lib/set-password.js",
+		"server":            "node ./lib/server.js",
+		"start":             "forever start ./lib/server.js",
+		"stop":              "forever stop ./lib/server.js",
+		"install-service":   "node ./lib/install-service.js"
 	},
 	"dependencies": {
 		"prompt-sync":   "^3.0.0",
 		"keychain":      "^1.0.0",
 		"config":        "^1.19.0",
 		"inwx":          "derhuerst/inwx-nodejs",
-		"forever":       "^0.15.1"
+		"forever":       "^0.15.1",
+		"user-startup":  "^0.2.1"
 	},
 	"devDependencies": {
 		"coffee-script": "^1.10.0"
