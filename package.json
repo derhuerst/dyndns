@@ -15,7 +15,8 @@
 		"server":            "node ./lib/server.js",
 		"start":             "forever start ./lib/server.js",
 		"stop":              "forever stop ./lib/server.js",
-		"install-service":   "node ./lib/install-service.js"
+		"install-service":   "node ./lib/install-service.js",
+		"uninstall-service": "node ./lib/uninstall-service.js"
 	},
 	"dependencies": {
 		"prompt-sync":   "^3.0.0",
