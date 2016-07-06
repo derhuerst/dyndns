@@ -4,9 +4,7 @@ config =   require 'config'
 
 
 
-process.stdout.write 'Please enter your INWX password. It will be stored in the keychain.\n'
-password = prompt.prompt
-	hidden: true
+password = prompt.hide 'Please enter your INWX password. It will be stored in the keychain.\n'
 
 
 

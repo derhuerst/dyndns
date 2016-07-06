@@ -19,10 +19,10 @@
 		"uninstall-service": "node ./lib/uninstall-service.js"
 	},
 	"dependencies": {
-		"prompt-sync":   "^3.0.0",
+		"prompt-sync":   "^4.1.4",
 		"keychain":      "^1.0.0",
 		"config":        "^1.19.0",
-		"inwx":          "derhuerst/inwx-nodejs",
+		"inwx":          "inwx/inwx-nodejs",
 		"forever":       "^0.15.1",
 		"user-startup":  "^0.2.1"
 	},
