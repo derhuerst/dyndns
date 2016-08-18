@@ -1,9 +1,10 @@
 'use script'
 
 module.exports = {
-	  port:      10000
-	, user:      'janedoe'
-	, id:        123456789
-	, namespace: 'bar.baz'
-	, entry:     'foo'
+	port: 10000,
+	server: {
+		hostname: 'dyndns.example.org',
+		port:     8043,
+		key:      '<your key>'
+	}
 }

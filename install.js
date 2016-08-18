@@ -3,4 +3,4 @@
 const startup = require('user-startup')
 const cfg = require('config')
 
-startup.create('dyndns-' + cfg.id, '/usr/local/bin/npm', ['start'])
+startup.create('dyndns', '/usr/local/bin/npm', ['start'])

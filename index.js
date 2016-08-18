@@ -4,7 +4,9 @@ const http = require('http')
 const cfg = require('config')
 const url = require('url')
 const qs = require('querystring')
-const dyndns = require('dyndns')(cfg.server.hostname, cfg.server.port, cfg.server.key)
+const dyndns = require('dyndns-client')
+
+const update = dyndns(cfg.server.hostname, cfg.server.port, cfg.server.key)
 
 
 
@@ -20,10 +22,10 @@ const server = http.createServer((req, res) => {
 	if (!query || !query.ip) return err('Missing IP address.', 400)
 	const ip = query.ip
 
-	dyndns('A', ip)
+	update('A', ip)
 	.then(
-		(ip) => console.log(cfg.domain + ' -> ' + ip),
-		() => err('Something went wrong.', 500))
+		(ip) => console.log(ip),
+		(e) => err(e.message, 500))
 })
 
 server.listen(cfg.port, (err) => {
