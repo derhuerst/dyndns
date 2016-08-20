@@ -24,7 +24,11 @@ const server = http.createServer((req, res) => {
 
 	update('A', ip)
 	.then(
-		(ip) => console.log(ip),
+		(ip) => {
+			console.log(ip)
+			res.statusCode = 202
+			res.end('Success.')
+		},
 		(e) => err(e.message, 500))
 })
 
