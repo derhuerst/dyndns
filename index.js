@@ -28,12 +28,13 @@ const server = http.createServer((req, res) => {
 	.then(([ipv4, ipv6]) => Promise.all([
 		update('A', ipv4),
 		update('AAAA', ipv6)
-	]), err)
+	]))
 	.then(([ipv4, ipv6]) => {
 		console.log(['v4', ipv4, 'v6', ipv6].join('\t'))
 		res.statusCode = 202
 		res.end('Success.')
-	}, err)
+	})
+	.catch(err)
 })
 
 server.listen(cfg.port, (err) => {

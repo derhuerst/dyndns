@@ -5,6 +5,7 @@
 [![dependency status](https://img.shields.io/david/derhuerst/dyndns.svg)](https://david-dm.org/derhuerst/dyndns#info=dependencies)
 [![dev dependency status](https://img.shields.io/david/dev/derhuerst/dyndns.svg)](https://david-dm.org/derhuerst/dyndns#info=devDependencies)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/dyndns.svg)
+[![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
 
 
 ## Installation
