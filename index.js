@@ -12,12 +12,10 @@ const update = dyndns(cfg.server.hostname, cfg.server.port, cfg.server.key)
 
 
 const server = http.createServer((req, res) => {
-	const err = (err) => {
-		const message = err.message || 'Unknown Error'
-		console.error(message)
+	const onError = (err) => {
+		console.error(err)
 		res.statusCode = err.statusCode || 500
-		res.end(message)
-		throw err
+		res.end(err.message || 'Unknown Error')
 	}
 
 
@@ -31,10 +29,10 @@ const server = http.createServer((req, res) => {
 	]))
 	.then(([ipv4, ipv6]) => {
 		console.log(['v4', ipv4, 'v6', ipv6].join('\t'))
-		res.statusCode = 202
+		res.statusCode = 200 // FritzBox doesn't understand 202 🙄
 		res.end('Success.')
 	})
-	.catch(err)
+	.catch(onError)
 })
 
 server.listen(cfg.port, (err) => {
