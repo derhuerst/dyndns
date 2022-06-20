@@ -18,7 +18,7 @@
 	"dependencies": {
 		"config": "^3.0.1",
 		"dyndns-client": "^0.1",
-		"public-ip": "^3.0.0",
+		"public-ip": "^5.0.0",
 		"user-startup": "^0.2.1"
 	}
 }
